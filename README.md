@@ -21,4 +21,10 @@ At this stage, it is assumed you are doing your Godot coding in GDScript. No att
 There is no user documentation currently, but it is a high priority, along with resolving issues in this release and I have already identified multiple areas of code refactoring to be done to decouple the extension interface from the GDScript code, and also to package up all of the code editor functionality into a more discrete unit. This will allow easier implementation of this editor into your own Godot projects, if you wish to have an out of the box GDMiniScript script editor for your users to write their own GDMiniScript code in your Godot programs.
 
 # Requirements
-The current build is utilising Godot 4.3 release. If you download the repository and open the project folder in Godot 4.3, it should just run. Embedding GDMSCoder in your own Godot Project will require understanding of how GDMiniScript works. Consult the (yet to be created) documentation for further information.
+The current build is utilising Godot 4.3 release. Embedding GDMSCoder in your own Godot Project will require understanding of how GDMiniScript works. Consult the (yet to be created) documentation for further information.
+
+# Installation
+1. Download a zipoped copy of the code and extract to a sub-folder for GDMSCoder
+2. Open Godot 4.3 and import the sub-folder created above
+3. Open the `User://` folder for the project. This should bring up a File Explorer window
+4. Open a second File Explorer window under the `project` folder, you will see a folder of sample scripts called `GDMS_Examples`
