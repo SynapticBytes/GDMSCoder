@@ -1,0 +1,510 @@
+[gd_scene load_steps=29 format=3 uid="uid://dtb8vshkfmmt7"]
+
+[ext_resource type="Script" path="res://Scripts/MSController.gd" id="1_rtet6"]
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_xew0d"]
+[ext_resource type="Script" path="res://Scripts/MiniScriptCode.gd" id="1_xjsxy"]
+[ext_resource type="Script" path="res://Scripts/ScriptOutputView.gd" id="2_v0gbj"]
+[ext_resource type="Script" path="res://Scripts/LogView.gd" id="3_u8doi"]
+[ext_resource type="Script" path="res://Scripts/FileMenu.gd" id="3_wfrin"]
+[ext_resource type="Script" path="res://DevToolsMenu.gd" id="4_wrdsr"]
+[ext_resource type="Script" path="res://Scripts/EditWindowStats.gd" id="4_ymyir"]
+[ext_resource type="Script" path="res://Scripts/PreservGlobals.gd" id="5_v2ml3"]
+[ext_resource type="Script" path="res://Scripts/save_load_buttons.gd" id="6_o3423"]
+[ext_resource type="Script" path="res://Scripts/GlobalOutput.gd" id="6_xstjo"]
+[ext_resource type="Script" path="res://Scripts/QueryTestVar.gd" id="7_qrnl1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbmor"]
+content_margin_left = 4.0
+content_margin_top = 2.0
+bg_color = Color(0.960408, 0, 0.44141, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 4
+expand_margin_left = 1.0
+expand_margin_right = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrfqc"]
+content_margin_left = 4.0
+content_margin_top = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.960408, 0, 0.44141, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.797206, 0, 0.361624, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 4
+expand_margin_right = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pkjlw"]
+content_margin_left = 2.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.797206, 0, 0.361624, 1)
+border_width_top = 3
+border_color = Color(0.797206, 0, 0.361624, 1)
+border_blend = true
+corner_radius_top_left = 1
+corner_radius_top_right = 4
+expand_margin_left = 2.0
+expand_margin_right = 3.0
+expand_margin_bottom = 1.0
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyspi"]
+bg_color = Color(0.960408, 0, 0.44141, 1)
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.797206, 0, 0.361624, 1)
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o03uy"]
+bg_color = Color(1, 0.296441, 0.522198, 1)
+border_color = Color(0.960408, 0, 0.44141, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_pyv43"]
+variation_opentype = {
+2003072104: null
+}
+variation_embolden = 0.79
+opentype_features = {
+1684826471: 1
+}
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_ulb16"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptam6"]
+bg_color = Color(0.705882, 0.592157, 0.176471, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.458824, 0.388235, 0.12549, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+shadow_color = Color(0, 0, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sg3g"]
+bg_color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7i1iw"]
+bg_color = Color(0.247059, 0.247059, 0.247059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2hp8"]
+bg_color = Color(0.160784, 0.160784, 0.160784, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0.1974, 0.0103788, 0.202684, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0cj1"]
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.792157, 0.121569, 0.713726, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3tg1n"]
+bg_color = Color(0.0627451, 0.101961, 0.121569, 0.709804)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_txucx"]
+font_size = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whg08"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.960784, 0.741176, 0.0627451, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_xew0d")
+metadata/_edit_horizontal_guides_ = [-16.0]
+
+[node name="MSController" type="GDMiniScript" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_rtet6")
+
+[node name="MenuBarBorder" type="ColorRect" parent="MSController"]
+z_index = 1
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 1152.0
+offset_bottom = 32.0
+color = Color(0.960408, 0, 0.44141, 1)
+
+[node name="ScriptMenu" type="MenuBar" parent="MSController"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 1152.0
+offset_bottom = 33.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 0.988235, 1)
+theme_override_constants/h_separation = 6
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 16
+theme_override_styles/hover = SubResource("StyleBoxFlat_tbmor")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rrfqc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pkjlw")
+
+[node name="File" type="PopupMenu" parent="MSController/ScriptMenu"]
+title = "File"
+theme_override_styles/panel = SubResource("StyleBoxFlat_fyspi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o03uy")
+item_count = 5
+item_0/text = "Load"
+item_1/text = "Save"
+item_1/id = 1
+item_2/text = "Save As"
+item_2/id = 2
+item_3/text = "Import"
+item_3/id = 3
+item_3/disabled = true
+item_4/text = "Revert to Autosave"
+item_4/id = 4
+script = ExtResource("3_wfrin")
+
+[node name="Theme" type="PopupMenu" parent="MSController/ScriptMenu"]
+title = "Theme"
+theme_override_styles/panel = SubResource("StyleBoxFlat_fyspi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o03uy")
+item_count = 4
+item_0/text = "Load"
+item_0/disabled = true
+item_1/text = "Save"
+item_1/id = 1
+item_1/disabled = true
+item_2/text = "Save As"
+item_2/id = 2
+item_2/disabled = true
+item_3/text = "Edit"
+item_3/id = 3
+item_3/disabled = true
+
+[node name="DevTools" type="PopupMenu" parent="MSController/ScriptMenu"]
+title = "DevTools"
+theme_override_styles/panel = SubResource("StyleBoxFlat_fyspi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o03uy")
+item_count = 7
+item_0/text = "Edit Configuration"
+item_0/disabled = true
+item_1/text = "Open Watch Window"
+item_1/id = 1
+item_1/disabled = true
+item_2/text = "Load Aliases"
+item_2/id = 2
+item_3/text = "Save Aliases"
+item_3/id = 3
+item_4/text = "Load Expanders"
+item_4/id = 4
+item_4/disabled = true
+item_5/text = "Save Expanders"
+item_5/id = 5
+item_5/disabled = true
+item_6/text = "Test Global"
+item_6/id = 6
+item_6/disabled = true
+script = ExtResource("4_wrdsr")
+
+[node name="MiniScriptCode" type="CodeEdit" parent="MSController"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_right = 0.0888889
+offset_left = 8.0
+offset_top = 32.0
+offset_right = 1024.0
+offset_bottom = 552.0
+theme_override_colors/background_color = Color(0.109804, 0.109804, 0.133333, 1)
+theme_override_colors/selection_color = Color(0.239216, 0.239216, 0.239216, 1)
+theme_override_fonts/font = SubResource("FontVariation_pyv43")
+placeholder_text = "Write MiniScript  here"
+minimap_draw = true
+caret_blink = true
+syntax_highlighter = SubResource("CodeHighlighter_ulb16")
+highlight_all_occurrences = true
+highlight_current_line = true
+draw_control_chars = true
+draw_tabs = true
+symbol_lookup_on_click = true
+line_folding = true
+gutters_draw_line_numbers = true
+gutters_zero_pad_line_numbers = true
+gutters_draw_fold_gutter = true
+code_completion_enabled = true
+auto_brace_completion_enabled = true
+auto_brace_completion_highlight_matching = true
+script = ExtResource("1_xjsxy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Popup" type="RichTextLabel" parent="MSController/MiniScriptCode"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.421
+anchor_top = 0.413
+anchor_right = 0.421
+anchor_bottom = 0.413
+offset_left = -67.736
+offset_top = -8.15201
+offset_right = 68.264
+offset_bottom = 7.84799
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/default_color = Color(0.521569, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ptam6")
+bbcode_enabled = true
+fit_content = true
+
+[node name="ScriptTextInput" type="LineEdit" parent="MSController"]
+z_index = 1
+offset_left = 8.0
+offset_top = 680.0
+offset_right = 1024.0
+offset_bottom = 711.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_7sg3g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7i1iw")
+expand_to_text_length = true
+clear_button_enabled = true
+flat = true
+
+[node name="ScriptOutputView" type="RichTextLabel" parent="MSController"]
+offset_left = 8.0
+offset_top = 552.0
+offset_right = 1152.0
+offset_bottom = 712.0
+focus_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2hp8")
+bbcode_enabled = true
+selection_enabled = true
+script = ExtResource("2_v0gbj")
+
+[node name="LogView" type="RichTextLabel" parent="MSController"]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = 720.0
+offset_right = 1152.0
+offset_bottom = 832.0
+focus_mode = 2
+theme_override_colors/table_border = Color(1, 1, 1, 1)
+theme_override_colors/table_even_row_bg = Color(0.890196, 0.823529, 0.117647, 1)
+theme_override_colors/table_odd_row_bg = Color(0.760784, 0.188235, 0.654902, 1)
+theme_override_colors/default_color = Color(0.780392, 0.780392, 0.780392, 1)
+theme_override_colors/font_selected_color = Color(0, 0.94902, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 1, 1)
+theme_override_styles/normal = SubResource("1")
+bbcode_enabled = true
+scroll_following = true
+selection_enabled = true
+script = ExtResource("3_u8doi")
+
+[node name="RunButton" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 8.0
+offset_right = 1288.0
+offset_bottom = 56.0
+theme_override_colors/icon_hover_pressed_color = Color(0.368627, 0.317647, 0.470588, 1)
+text = "Run"
+
+[node name="CompileButton" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 120.0
+offset_right = 1288.0
+offset_bottom = 168.0
+text = "Compile"
+
+[node name="Reset" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 176.0
+offset_right = 1288.0
+offset_bottom = 224.0
+text = "Reset"
+
+[node name="Stop" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 64.0
+offset_right = 1288.0
+offset_bottom = 112.0
+text = "Stop"
+
+[node name="ClearLog" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 232.0
+offset_right = 1288.0
+offset_bottom = 280.0
+text = "Clear Log"
+
+[node name="ClearCode" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 288.0
+offset_right = 1288.0
+offset_bottom = 336.0
+text = "Clear Code"
+
+[node name="QueryTestVar" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 632.0
+offset_right = 1392.0
+offset_bottom = 664.0
+text = "Query test_var"
+script = ExtResource("7_qrnl1")
+
+[node name="TestGlobals" type="Button" parent="MSController"]
+offset_left = 1168.0
+offset_top = 552.0
+offset_right = 1392.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0cj1")
+text = "Set \"glob_val\"
+"
+
+[node name="PreserveGlobals" type="CheckButton" parent="MSController"]
+unique_name_in_owner = true
+offset_left = 1168.0
+offset_top = 360.0
+offset_right = 1352.0
+offset_bottom = 391.0
+button_pressed = true
+text = "Preserve Globals"
+script = ExtResource("5_v2ml3")
+
+[node name="EditWindowStats" type="Label" parent="MSController"]
+anchors_preset = -1
+anchor_right = 0.006
+offset_left = 936.0
+offset_top = 528.0
+offset_right = 1007.36
+offset_bottom = 545.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_3tg1n")
+label_settings = SubResource("LabelSettings_txucx")
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_ymyir")
+metadata/_edit_use_anchors_ = true
+
+[node name="QuickScripts" type="Label" parent="MSController"]
+offset_left = 1176.0
+offset_top = 400.0
+offset_right = 1344.0
+offset_bottom = 496.0
+text = "    Quick Script Slots
+Save:
+Load:
+"
+vertical_alignment = 3
+script = ExtResource("6_o3423")
+
+[node name="QuickSave1" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 32.0
+offset_right = 80.0
+offset_bottom = 63.0
+text = "1"
+
+[node name="QuickSave2" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 32.0
+offset_right = 120.0
+offset_bottom = 63.0
+text = "2
+"
+
+[node name="QuickSave3" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 63.0
+text = "3
+"
+
+[node name="QuickLoad1" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 80.0
+offset_bottom = 103.0
+text = "1"
+
+[node name="QuickLoad2" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 72.0
+offset_right = 120.0
+offset_bottom = 103.0
+text = "2"
+
+[node name="QuickLoad3" type="Button" parent="MSController/QuickScripts"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 72.0
+offset_right = 160.0
+offset_bottom = 103.0
+text = "3"
+
+[node name="GlobalOutput" type="Label" parent="MSController"]
+offset_left = 1168.0
+offset_top = 592.0
+offset_right = 1392.0
+offset_bottom = 624.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_whg08")
+text = "Receive test global"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("6_xstjo")
+
+[connection signal="gdms_global_received" from="MSController" to="MSController/GlobalOutput" method="_on_ms_controller_gdms_global_received"]
+[connection signal="gdms_log" from="MSController" to="MSController/LogView" method="_on_ms_controller_gdms_log"]
+[connection signal="gdms_print" from="MSController" to="MSController/ScriptOutputView" method="_on_ms_controller_gdms_print"]
+[connection signal="id_pressed" from="MSController/ScriptMenu/File" to="MSController/MiniScriptCode" method="_on_file_id_pressed"]
+[connection signal="id_pressed" from="MSController/ScriptMenu/DevTools" to="MSController/MiniScriptCode" method="_on_dev_tools_id_pressed"]
+[connection signal="caret_activated" from="MSController/MiniScriptCode" to="MSController/EditWindowStats" method="_on_mini_script_code_caret_activated"]
+[connection signal="focus_entered" from="MSController/MiniScriptCode" to="MSController/MiniScriptCode" method="_on_focus_entered"]
+[connection signal="pressed" from="MSController/RunButton" to="MSController/MiniScriptCode" method="_on_run_button_pressed"]
+[connection signal="pressed" from="MSController/RunButton" to="MSController/ScriptOutputView" method="_on_run_button_pressed"]
+[connection signal="pressed" from="MSController/CompileButton" to="MSController/MiniScriptCode" method="_on_compile_button_pressed"]
+[connection signal="pressed" from="MSController/Reset" to="MSController/MiniScriptCode" method="_on_Reset_pressed"]
+[connection signal="pressed" from="MSController/Reset" to="MSController/ScriptOutputView" method="_on_Reset_pressed"]
+[connection signal="pressed" from="MSController/Stop" to="MSController/MiniScriptCode" method="_on_stop_pressed"]
+[connection signal="pressed" from="MSController/ClearLog" to="MSController/LogView" method="_on_clear_log_pressed"]
+[connection signal="pressed" from="MSController/ClearCode" to="MSController/MiniScriptCode" method="_on_clear_code_pressed"]
+[connection signal="pressed" from="MSController/QueryTestVar" to="MSController/QueryTestVar" method="_on_pressed"]
+[connection signal="pressed" from="MSController/TestGlobals" to="MSController/MiniScriptCode" method="_on_test_globals_pressed"]
+[connection signal="toggled" from="MSController/PreserveGlobals" to="MSController/MiniScriptCode" method="_on_preserve_globals_toggled"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickSave1" to="MSController/QuickScripts" method="_on_quick_save_1_pressed"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickSave2" to="MSController/QuickScripts" method="_on_quick_save_2_pressed"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickSave3" to="MSController/QuickScripts" method="_on_quick_save_3_pressed"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickLoad1" to="MSController/QuickScripts" method="_on_quick_load_1_pressed"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickLoad2" to="MSController/QuickScripts" method="_on_quick_load_2_pressed"]
+[connection signal="pressed" from="MSController/QuickScripts/QuickLoad3" to="MSController/QuickScripts" method="_on_quick_load_3_pressed"]

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="UserScript" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Resources/UserScript.gd" id="1_e81cs"]
+
+[resource]
+script = ExtResource("1_e81cs")
+user_script = "first=0
+second=1
+counter=2
+n=50
+while (counter < n)
+	temp=second
+	second=first+second
+	first=temp
+	counter = counter + 1
+end while
+print first+second"
+this_save_date = "2023-11-25T14:22:09"
+user_script_path = "user://scripts/FibNR.tres"

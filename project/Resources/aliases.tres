@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UserScript" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Resources/UserScript.gd" id="1_2wqje"]
+
+[resource]
+script = ExtResource("1_2wqje")
+user_script = "//--------
+// ALIASES
+//--------
+
+pop = function(message, display_time)
+	call_wait_time = 0
+	print \"my_popup call about to happen\"
+	return gdms.call(\"my_popup\", {\"message\":message, \"display_time\":display_time}, call_wait_time)
+end function"
+this_save_date = "2023-12-21T10:04:52"
+user_script_path = "res://resources/aliases.tres"

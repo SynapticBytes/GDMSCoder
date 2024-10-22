@@ -1,0 +1,9 @@
+[configuration]
+
+entry_symbol = "gdminiscript_library_init"
+compatibility_minimum = 4.3
+
+[libraries]
+
+windows.x86_64 = "res://bin/gdminiscript.windows.64.release.dll"
+

@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GDMSCoder"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.3")
+config/icon="res://icon.png"
+
+[autoload]
+
+Auto="*res://Scripts/Auto.gd"
+SaveLoadButtons="*res://Scripts/save_load_buttons.gd"
+
+[debug]
+
+settings/stdout/verbose_stdout=true
+
+[display]
+
+window/size/viewport_width=1440
+window/size/viewport_height=840
+window/size/initial_position=Vector2i(0, 30)
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[gdnative]
+
+singletons=[]
+
+[network]
+
+limits/debugger/max_chars_per_second=50000
+limits/debugger/max_queued_messages=100
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.145098, 0.32549, 0.407843, 1)
+environment/defaults/default_environment="res://default_env.tres"

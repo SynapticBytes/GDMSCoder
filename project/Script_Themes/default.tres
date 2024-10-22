@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Script_theme" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/ScriptTheme.gd" id="1_babhf"]
+
+[resource]
+script = ExtResource("1_babhf")
+values = {
+"COMMENT": 2005441023,
+"CONTROL": 3007606015,
+"FONT": 3333343231,
+"FUNCTION": 1483076351,
+"KEYWORD_LISTMAP": 1483076351,
+"KEYWORD_NUMERIC": 1483076351,
+"KEYWORD_OTHER": 1052019199,
+"KEYWORD_SPECIAL": 1052019199,
+"KEYWORD_STRING": 1483076351,
+"MEMBER_VARIABLE": 1483076351,
+"NAME": "default",
+"NUMBER": 4293426431,
+"STRING": 3530104575,
+"SYMBOL": 1483076351
+}

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Script_theme" load_steps=2 format=3 uid="uid://bkq0o53dnf265"]
+
+[ext_resource type="Script" path="res://Scripts/ScriptTheme.gd" id="1_ln7hr"]
+
+[resource]
+script = ExtResource("1_ln7hr")
+values = {
+"COMMENT": 2005441023,
+"CONTROL": 2147472639,
+"FONT": 4144831231,
+"FUNCTION": 2147418367,
+"KEYWORD_LISTMAP": 3445382399,
+"KEYWORD_NUMERIC": 4290167295,
+"KEYWORD_OTHER": 4290825215,
+"KEYWORD_SPECIAL": 1097458175,
+"KEYWORD_STRING": 4279538687,
+"MEMBER_VARIABLE": 16744447,
+"NAME": "GDMiniScript",
+"NUMBER": 4289003775,
+"STRING": 4278255615,
+"SYMBOL": 1687547391
+}

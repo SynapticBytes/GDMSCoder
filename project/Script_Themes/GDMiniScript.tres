@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Script_theme" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/ScriptTheme.gd" id="1_wcm0p"]
+
+[resource]
+script = ExtResource("1_wcm0p")
+script_theme_values = {
+"FONT": 4294967295,
+"NAME": "DEFAULT"
+}

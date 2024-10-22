@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UserScript" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Resources/UserScript.gd" id="1_gciri"]
+
+[resource]
+script = ExtResource("1_gciri")
+user_script = "popped = pop(\"Welcome to my custom popup\",3)
+while not popped.result
+	wait 0.5
+	print \"waiting\"
+end while
+
+print \"done\"
+"
+this_save_date = "2024-10-22T19:45:16"
+user_script_path = "user://scripts/popup_test.tres"
