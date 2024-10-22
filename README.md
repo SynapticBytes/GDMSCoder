@@ -23,8 +23,14 @@ There is no user documentation currently, but it is a high priority, along with 
 # Requirements
 The current build is utilising Godot 4.3 release. Embedding GDMSCoder in your own Godot Project will require understanding of how GDMiniScript works. Consult the (yet to be created) documentation for further information.
 
-# Installation
-1. Download a zipoped copy of the code and extract to a sub-folder for GDMSCoder
-2. Open Godot 4.3 and import the sub-folder created above
-3. Open the `User://` folder for the project. This should bring up a File Explorer window
-4. Open a second File Explorer window under the `project` folder, you will see a folder of sample scripts called `GDMS_Examples`
+# Installation (v0.8.0 pre-alpha)
+1. Download the code from this repository and extract to a sub-directory for GDMSCoder
+2. Open Godot and import the sub-folder created above as a new project
+3. Open the `User://` folder for the project menu option under the _Project_ menu. This should bring up a File Explorer window
+4. In this sub-directory, create a new sub-directory called `save`. This directory is required for the automatic timed script backup, and Quick Scripts feature. this step will be automated in a future build and is subject to name changes
+
+You should now be able to run the Godot project and will be presenting with a blank editor window, ready to write MiniScript code
+
+# Installing example scripts
+
+Under the Project folder structure is a sub-diectory with some example scripts to get you started. To use these, you will need to move this directory into the `User://` directory. Using File Explorer to move the whole directory is the simplest way to accomplish this. Run the project after this is done and you can then use the _File->Load Script_ menu option in the script editor to load and run these examples.
