@@ -4,6 +4,8 @@ GDMiniScript Code Environment - A custom implementation of the MiniScript Script
 # Overview
 MiniScript (https://miniscript.org) is a simple, elegant scripting language for learning to code, and is simple to embed as a scripting language within other programming environments. GDMiniScript is a Godot GDExtension that can be used to implement MiniScript within the Godot environment, and GDMSCoder is an Editor/IDE to write and run GDMiniScript code as stand-alone software, or to embed within a larger Godot program.
 
+For more in-depth documentation, keep checking out the GDMSCoder Wiki, which while minimal at the moment, is first priority and will be growing daily.
+
 # Design Philosophy
 The original goal for GDMiniScript was as a way for Godot Game programmers to allow the players to write their own scripts to control gameplay in your game, allowing you to create your very own coding game with ease, so you can focus on your gameplay without having to write your own scripting engine. 
 
