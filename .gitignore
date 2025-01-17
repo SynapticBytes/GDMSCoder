@@ -13,6 +13,7 @@ export_presets.cfg
 
 **/bin/*
 !**/bin/*.gdextension
+!**/bin/gdminiscript.windows.64.release.dll
 
 .vs/**
 !.vs/launch.vs.json
